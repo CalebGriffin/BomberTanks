@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movementScript : MonoBehaviour
+public class redMovement : MonoBehaviour
 {
-    [Header("Settings to change for each player")]
     [Range(1,2)]
     public int playerNum;
     public KeyCode[] keyCodes;
-    [Header("Physics and movement Settings")]
     Rigidbody2D rigidbody;
     public float moveSpeed=1f;
 
@@ -26,27 +24,29 @@ public class movementScript : MonoBehaviour
 
     public void UpdateMovement()
     {
-        //key 0 is front, 1 is back, 2 is left, 3 is right
         if(Input.GetKey(keyCodes[0]))
         {
-            //set the speed to the right direction and rotation
-            rigidbody.velocity = new Vector2(rigidbody.velocity.x, moveSpeed);
+            //rigidbody.velocity = new Vector2(rigidbody.velocity.x, moveSpeed);
             transform.rotation = Quaternion.Euler(0, 0, 180);
+            transform.Translate(Vector2.up * -0.64f * Time.deltaTime); 
         }
         else if(Input.GetKey(keyCodes[1]))
         {
-            rigidbody.velocity = new Vector2(rigidbody.velocity.x, -moveSpeed);
+            //rigidbody.velocity = new Vector2(rigidbody.velocity.x, -moveSpeed);
             transform.rotation = Quaternion.Euler(0, 0, 0);
+            transform.Translate(Vector2.up * -0.64f * Time.deltaTime);
         }
         else if (Input.GetKey(keyCodes[2]))
         {
-            rigidbody.velocity = new Vector2(-moveSpeed, rigidbody.velocity.y);
+            //rigidbody.velocity = new Vector2(-moveSpeed, rigidbody.velocity.y);
             transform.rotation = Quaternion.Euler(0, 0, 270);
+            transform.Translate(Vector2.up * -0.64f * Time.deltaTime);
         }
         else if(Input.GetKey(keyCodes[3]))
         {
-            rigidbody.velocity = new Vector2(moveSpeed, rigidbody.velocity.y);
+            //rigidbody.velocity = new Vector2(moveSpeed, rigidbody.velocity.y);
             transform.rotation = Quaternion.Euler(0, 0, 90);
+            transform.Translate(Vector2.up * -0.64f * Time.deltaTime);
         }
 
     }

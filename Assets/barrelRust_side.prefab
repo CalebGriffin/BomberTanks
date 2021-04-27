@@ -91,10 +91,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1232288619493611481}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74b6ede33e2e79e448c98d86beaa1283, type: 3}
+  m_Script: {fileID: 11500000, guid: 522678149c7cad1448048edd47dfac32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExplosionPrefab: {fileID: 8690078562830541569, guid: 96925e69b29117246b9a70c7b6060f4b,
+  ExplosionPrefab: {fileID: 8690078562830541569, guid: 5d655f847e2a2674bbffcaa1ea46a4e7,
     type: 3}
   wallLayer:
     serializedVersion: 2

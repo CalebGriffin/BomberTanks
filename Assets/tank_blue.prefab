@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 495025750613092680}
   - component: {fileID: 495025750613092681}
   - component: {fileID: 495025750613092682}
-  - component: {fileID: 495025750613092683}
   - component: {fileID: 495025750613092684}
   - component: {fileID: 495025750613092685}
   - component: {fileID: 495025750613092686}
+  - component: {fileID: 4523357729197022449}
   m_Layer: 0
   m_Name: tank_blue
   m_TagString: Untagged
@@ -113,21 +113,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.76, y: 0.92}
   m_EdgeRadius: 0
---- !u!114 &495025750613092683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495025750613092687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60bc5c46b69b6f0468fe099a775f62eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerNum: 1
-  keyCodes: 1101000012010000140100001301000000000000
-  moveSpeed: 1
 --- !u!50 &495025750613092684
 Rigidbody2D:
   serializedVersion: 4
@@ -158,15 +143,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 495025750613092687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62a61aa1abbb33648ab08eadce26c5bb, type: 3}
+  m_Script: {fileID: 11500000, guid: ce8c6b3f8c728e84690cea2e442838c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 499915622713851120, guid: b1e2323d5edac3249a9bf1d1f1091d7b, type: 3}
-  mine: {fileID: 1232288619493611481, guid: 491172ad2165ac84bb17c1bf9614d9ce, type: 3}
-  fireKey: 303
-  bombKey: 305
+  bullet: {fileID: 499915622713851120, guid: 6dab71c1a91074649831ab075da81524, type: 3}
+  mine: {fileID: 1232288619493611481, guid: 5e40c44e1de7e1e49ba3f3ef3cd23fc7, type: 3}
+  fireKey: 257
+  bombKey: 258
   muzzle: {fileID: 495025750848707194}
-  ammoCount: 2
+  ammoCount: 10
 --- !u!114 &495025750613092686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,10 +161,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 495025750613092687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bcd81904ae81344d92d14013c4d28cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 60b65c082f679cb47b6c5bd229a9f906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyBullet: RedBullet
+--- !u!114 &4523357729197022449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495025750613092687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8ca4a57672456408ce6f84a633602d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNum: 0
+  keyCodes: 11010000120100001401000013010000
+  moveSpeed: 1
 --- !u!1 &495025750848707195
 GameObject:
   m_ObjectHideFlags: 0
